@@ -1,4 +1,5 @@
 plot2 <- function() {
+  ## This R Code was developed by Venkatesh Thyagarajan
   ## Set directory
   vDir="/Users/Administrator/Coursera/Exploratory Data Analysis/Course Project 1"
   setwd(vDir)
@@ -18,6 +19,4 @@ plot2 <- function() {
   
   ## Plot the histogram with labels
   plot(strptime(hpcDF$Time,format="%Y-%m-%d %H:%M:%S"),hpcDF$Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)")
-  
-  dev.off()
 }
