@@ -1,4 +1,5 @@
 plot1 <- function() {
+  ## This R Code was developed by Venkatesh Thyagarajan
   ## Set directory
   vDir="/Users/Administrator/Coursera/Exploratory Data Analysis/Course Project 1"
   setwd(vDir)
