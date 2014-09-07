@@ -1,4 +1,5 @@
 plot3 <- function() {
+  ## This R Code is developed by Venkatesh Thyagarajan
   ## Set directory
   vDir="/Users/Administrator/Coursera/Exploratory Data Analysis/Course Project 1"
   setwd(vDir)
@@ -20,6 +21,5 @@ plot3 <- function() {
   plot(strptime(hpcDF$Time,format="%Y-%m-%d %H:%M:%S"),hpcDF$Sub_metering_1,type="l",xlab="",ylab="Energy Sub metering")
   lines(strptime(hpcDF$Time,format="%Y-%m-%d %H:%M:%S"),hpcDF$Sub_metering_2,type="l",col="red")
   lines(strptime(hpcDF$Time,format="%Y-%m-%d %H:%M:%S"),hpcDF$Sub_metering_3,type="l",col="blue")
-  legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=c(1,1,1),col=c("black","red","blue"))  
-  dev.off()
+  legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=c(1,1,1),col=c("black","red","blue"))
 }
