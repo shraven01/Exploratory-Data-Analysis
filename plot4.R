@@ -1,5 +1,5 @@
 plot4 <- function() {
-
+  ## This R Code has been developed by Venkatesh Thyagarajan
   ## Set directory
   vDir="/Users/Administrator/Coursera/Exploratory Data Analysis/Course Project 1"
   setwd(vDir)
@@ -32,5 +32,4 @@ plot4 <- function() {
 
   ## Plot graph 4 Global Reactive Power with labels
   plot(datetime,hpcDF$Global_reactive_power,type="l",xlab="datetime",ylab="Global_reactive_power")
-  dev.off()
 }
